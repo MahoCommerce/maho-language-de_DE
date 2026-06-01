@@ -17,18 +17,18 @@
     <tr>
         <td class="action-content">
             <h1>{{htmlescape var=$customer.name}},</h1>
-            <p>You recently requested a login link for your account.</p>
-            <p>Click the button below to log in to your account:</p>
+            <p>Sie haben kürzlich einen Login-Link für Ihr Konto angefordert.</p>
+            <p>Klicken Sie auf die Schaltfläche unten, um sich bei Ihrem Konto anzumelden:</p>
             <table cellspacing="0" cellpadding="0" class="action-button" >
                 <tr>
                     <td>
-                        <a href="{{store url="customer/account/magiclinklogin/" _query_token=$customer.rp_token}}"><span>Login to Your Account</span></a>
+                        <a href="{{url=&quot;Kunden/Konto/magiclinklogin/&quot; _query_token=$customer.rp_token}}"><span>Bei Ihrem Konto anmelden</span></a>
                     </td>
                 </tr>
             </table>
-            <p>If you did not request this login link, you can safely ignore this message.</p>
+            <p>Wenn Sie diesen Login-Link nicht angefordert haben, können Sie diese Nachricht ignorieren.</p>
         </td>
     </tr>
 </table>
 
-{{template config_path="design/email/footer"}}
+{{Template config_path="design/email/footer"}}
